@@ -45,6 +45,9 @@
             }
         }
     }
+
+    $_SESSION['login_user_time'] = time();
+
 ?>
 
 <!DOCTYPE html>

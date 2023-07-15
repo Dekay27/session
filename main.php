@@ -11,6 +11,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap 5 Homepage</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
     
@@ -20,7 +23,7 @@
         }else{
             header('Location: index.php');
         } 
-    
+
     ?>
 
   <header class="bg-dark text-white py-5">
@@ -55,5 +58,23 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            function checkUserTime() {
+                $.ajax({
+                    url: "check-user-time.php",
+                    method: "post",
+                    success: function(response) {
+                        alert(response);
+                    }
+                });
+            }
+
+            // Call the function when needed
+            checkUserTime();
+        });
+    </script>
+
 </body>
 </html>
