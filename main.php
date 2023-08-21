@@ -67,9 +67,16 @@
                     method: "post",
                     success: function(response) {
                         alert(response);
+                        if(response==='logout'){
+                            window.location.href = 'logout.php'
+                        }
                     }
                 });
             }
+
+            setInterval(function (){
+
+            },2000 )
 
             // Call the function when needed
             checkUserTime();
