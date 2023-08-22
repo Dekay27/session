@@ -37,8 +37,11 @@ $query = "SELECT * FROM mains";
 $mains = $db->query($query);
 
 // Query the starters/sides table
-$query = "SELECT * FROM pizza";
-$pizza = $db->query($query);
+//$query = "SELECT * FROM pizza";
+$query2 = "SELECT * FROM pizza GROUP BY name, size";
+$query_unique = "SELECT DISTINCT name FROM pizza;";
+$pizza = $db->query($query2);
+$pizza_unique = $db->query($query_unique);
 
 // Query the starters/sides table
 $query = "SELECT * FROM promo";
