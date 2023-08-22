@@ -1,0 +1,74 @@
+
+
+--CREATE TABLE IF NOT EXISTS starters_sides (id INTEGER PRIMARY KEY,name TEXT,size TEXT,price NUMERIC,description TEXT,image_path TEXT);
+--CREATE TABLE IF NOT EXISTS salads (id INTEGER PRIMARY KEY,name TEXT,size TEXT,price NUMERIC,description TEXT,image_path TEXT);
+--CREATE TABLE IF NOT EXISTS extras (id INTEGER PRIMARY KEY,name TEXT,size TEXT,price NUMERIC,description TEXT,image_path TEXT);
+--CREATE TABLE IF NOT EXISTS noodles (id INTEGER PRIMARY KEY,name TEXT,size TEXT,price NUMERIC,description TEXT,image_path TEXT);
+--CREATE TABLE IF NOT EXISTS rice_dishes (id INTEGER PRIMARY KEY,name TEXT,size TEXT,price NUMERIC,description TEXT,image_path TEXT);
+--CREATE TABLE IF NOT EXISTS sauces (id INTEGER PRIMARY KEY,name TEXT,size TEXT,price NUMERIC,description TEXT,image_path TEXT);
+--CREATE TABLE IF NOT EXISTS promo (id INTEGER PRIMARY KEY,name TEXT,size TEXT,price NUMERIC,description TEXT,image_path TEXT);
+--CREATE TABLE IF NOT EXISTS mains (id INTEGER PRIMARY KEY,name TEXT,size TEXT,price NUMERIC,description TEXT,image_path TEXT);
+--CREATE TABLE IF NOT EXISTS pizza (id INTEGER PRIMARY KEY,name TEXT,size TEXT,price NUMERIC,description TEXT,image_path TEXT);
+
+-- CREATE TABLE IF NOT EXISTS starters_sides (id INTEGER PRIMARY KEY,name TEXT,size TEXT,price NUMERIC,description TEXT,image_path TEXT);
+-- CREATE TABLE IF NOT EXISTS starters_sides (id INTEGER PRIMARY KEY,name TEXT,size TEXT,price NUMERIC,description TEXT,image_path TEXT);
+
+CREATE TABLE IF NOT EXISTS burgers (id INTEGER PRIMARY KEY,name TEXT,size TEXT,price NUMERIC,description TEXT,image_path TEXT);
+CREATE TABLE IF NOT EXISTS sandwiches (id INTEGER PRIMARY KEY,name TEXT,size TEXT,price NUMERIC,description TEXT,image_path TEXT);
+CREATE TABLE IF NOT EXISTS wraps_shawarma (id INTEGER PRIMARY KEY,name TEXT,size TEXT,price NUMERIC,description TEXT,image_path TEXT);
+
+CREATE TABLE IF NOT EXISTS big_bites (id INTEGER PRIMARY KEY,name TEXT,description TEXT,image_path TEXT);
+
+
+######################################################################
+
+
+INSERT INTO big_bites (name, description, image_path)
+VALUES ('Wraps (Shawarma)', '', '/path/to/image.jpg');
+VALUES ('Sandwiches', 'R', 0.00, '', '/path/to/image.jpg');
+VALUES ('Wraps (Shawarma)', 'R', 0.00, '', '/path/to/image.jpg');
+
+INSERT INTO burgers (name, size, price, description, image_path)
+VALUES
+    ('Beef Burger', '', 46.00, '', '/path/to/image1.jpg'),
+    ('Cheese Burger', '', 49.00, '', '/path/to/image2.jpg'),
+    ('Bacon Cheese Burger', '', 63.00, '', '/path/to/image3.jpg'),
+    ('Double Beef Burger', '', 56.00, '', '/path/to/image3.jpg'),
+    ('Chicken Burger', '', 46.00, '', '/path/to/image3.jpg'),
+    ('Fish FIllet Burger', '', 48.00, '', '/path/to/image3.jpg');
+
+INSERT INTO rice_dishes (name, size, price, description, image_path)
+VALUES
+    ('Beef or Chicken Sauce', '', 68, '', '/path/to/image1.jpg'),
+    ('Pork Sauce', '', 70, '', '/path/to/image2.jpg'),
+    ('Fish Sauce', '', 75, '', '/path/to/image2.jpg'),
+    ('Vegetable Sauce', '', 55, '', '/path/to/image2.jpg'),
+    ('Shrimp Sauce', '', 95, '', '/path/to/image2.jpg');
+
+
+INSERT INTO rice_dishes (name, size, price, description, image_path)
+VALUES
+    ('Steamed Rice', 'R', 68, '', '/path/to/image1.jpg'),
+    ('Steamed Rice', 'L', 68, '', '/path/to/image1.jpg'),
+    ('Jollof Rice', 'R', 70, '', '/path/to/image2.jpg'),
+    ('Jollof Rice', 'L', 70, '', '/path/to/image2.jpg'),
+    ('Egg Fried Rice', 'R', 75, '', '/path/to/image2.jpg'),
+    ('Egg Fried Rice', 'L', 75, '', '/path/to/image2.jpg'),
+    ('Beef or Chicken Fried Rice', 'R', 55, '', '/path/to/image2.jpg'),
+    ('Beef or Chicken Fried Rice', 'L', 55, '', '/path/to/image2.jpg'),
+    ('Pork Fried Rice', 'R', 55, '', '/path/to/image2.jpg'),
+    ('Pork Fried Rice', 'L', 55, '', '/path/to/image2.jpg'),
+    ('Special Fried Rice', 'R', 55, '', '/path/to/image2.jpg'),
+    ('Special Fried Rice', 'L', 55, '', '/path/to/image2.jpg'),
+    ('Jumbo Fried Rice (No Shrimps)', 'R', 55, '', '/path/to/image2.jpg'),
+    ('Jumbo Fried Rice (No Shrimps)', 'L', 55, '', '/path/to/image2.jpg'),
+    ('Jumbo Fried Rice With Shrimps', 'R', 55, '', '/path/to/image2.jpg'),
+    ('Jumbo Fried Rice With Shrimps', 'L', 55, '', '/path/to/image2.jpg'),
+    ('Sausage Fried Rice', 'R', 55, '', '/path/to/image2.jpg'),
+    ('Sausage Fried Rice', 'L', 55, '', '/path/to/image2.jpg'),
+    ('Shrimp Fried Rice', 'R', 55, '', '/path/to/image2.jpg'),
+    ('Shrimp Fried Rice', 'L', 55, '', '/path/to/image2.jpg'),
+    ('Vegetable Fried Rice', 'R', 95, '', '/path/to/image2.jpg'),
+    ('Vegetable Fried Rice', 'L', 95, '', '/path/to/image2.jpg');
+
+
